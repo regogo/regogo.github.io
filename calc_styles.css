@@ -1,12 +1,13 @@
 
 
   body {
-  background-color: lightblue;
   margin: 0;
+  background-image: linear-gradient(to right, rgb(41, 128, 185), rgb(109, 213, 250), rgb(255, 255, 255));
   box-sizing: border-box;
   font-size: 19px;
   font-family: 'Open Sans', sans-serif;
 }
+
 .container {
   height: 100vh;
   width: 100%;
@@ -17,10 +18,10 @@
   margin: auto;
   max-height: 800px;
   padding: 20px;
-  background: white;
+  background-image: linear-gradient(to right, rgb(198, 255, 221), rgb(251, 215, 134), rgb(247, 121, 125));
 }
 form {
-  border: 1px solid black;
+  border: 2px
 }
 table, th, td {
   border: 1px solid red;
@@ -50,6 +51,7 @@ input {
 button {
   padding: 20px;
   font-size:1rem;
+  background: #46c3db
 }
 
 .row1 {
