@@ -8,21 +8,21 @@
     <title> Assignment 1 in CMSC 207 - Simple calculator</title>
     <link rel="stylesheet" href="calc_styles.css">
     <script type="text/javascript" src="calc_script.js"></script>
-
+    
   </head>
   <body>
     <div class="container">
      <div class="card">
        <form name="calculator">
-         <input type="text" name="display" value="" placeholder="Output"
+         <input type="text" name="display" value="0" placeholder="Output"
             onkeypress="return event.charCode >= 48
   			    && event.charCode <= 57">
 
          <div class="row">
-           <button type="button" name="button" >C</button>
-           <button type="button" name="button">CE</button>
-           <button type="button" name="button">0</button>
-           <button type="button" name="button">/</button>
+           <button type="button" name="button" OnClick="back(this.form)">C</button>
+           <button type="button" name="button" OnClick="clear(this.form)">CE</button>
+           <button type="button" name="button" OnClick="calculator.display.value+='0'">0</button>
+           <button type="button" name="button" OnClick="calculator.display.value+='/'">/</button>
          </div>
          <div class="row">
            <button type="button" name="button" OnClick="calculator.display.value+='7'">7</button>
@@ -43,11 +43,9 @@
            <button type="button" name="button" OnClick="calculator.display.value+='+'">+</button>
          </div>
          <div class="row1">
-           <button type="button" name="button">=</button>
-
+           <button type="button" name="button" OnClick="process(this.form)">=</button>
          </div>
        </form>
-
      </div>
     </div>
   </body>
