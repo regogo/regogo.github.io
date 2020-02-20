@@ -1,130 +1,52 @@
 </<!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
   <head>
+    <!-- Required meta tags for responsiveness -->
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
     <title> Assignment 1 in CMSC 207 - Simple calculator</title>
     <link rel="stylesheet" href="calc_styles.css">
     <script type="text/javascript" src="calc_script.js"></script>
 
   </head>
   <body>
-    <form name="calculator">
-        <table id="calculator">
-          <tr>
-            <td colspan="6">
-                <input id="button"
-                type="text"
-                name="calc_screen"
-                onkeypress="return event.charcode >= 48
-                && event.charcode <= 57">
-            </td>
-          </tr>
+    <div class="container">
+     <div class="card">
+       <form>
+         <input type="text" name="" value="" placeholder="Output">
 
-          <tr>
-              <td><input id="button"
-                type="button" value="C"
-                OnClick="clear(this.form)">
-              </td>
+         <div class="row">
+           <button type="button" name="button">C</button>
+           <button type="button" name="button">CE</button>
+           <button type="button" name="button">0</button>
+           <button type="button" name="button">/</button>
+         </div>
+         <div class="row">
+           <button type="button" name="button">7</button>
+           <button type="button" name="button">8</button>
+           <button type="button" name="button">9</button>
+           <button type="button" name="button">*</button>
+         </div>
+         <div class="row">
+           <button type="button" name="button">4</button>
+           <button type="button" name="button">5</button>
+           <button type="button" name="button">6</button>
+           <button type="button" name="button">-</button>
+         </div>
+         <div class="row">
+           <button type="button" name="button">1</button>
+           <button type="button" name="button">2</button>
+           <button type="button" name="button">3</button>
+           <button type="button" name="button">+</button>
+         </div>
+         <div class="row1">
+           <button type="button" name="button">=</button>
 
-              <td><input id="button"
-                type="button" value="CE"
-                OnClick="clear(this.form)">
-              </td>
+         </div>
+       </form>
 
-              <td><input id="button"
-                type="button" value="%"
-                OnClick="clear(this.form)">
-              </td>
-
-              <td><input id="button"
-                type="button" value="/"
-                OnClick="clear(this.form)">
-              </td>
-        </tr>
-
-        <tr>
-            <td><input id="button"
-              type="button" value="7"
-              OnClick="calc.display.value+='4'">
-            </td>
-
-            <td><input id="button"
-              type="button" value="8"
-              OnClick="calc.display.value+='5'">
-            </td>
-
-            <td><input id="button"
-              type="button" value="9"
-              OnClick="calc.display.value+='6'">
-            </td>
-
-            <td><input id="button"
-              type="button" value="*"
-              OnClick="clear(this.form)">
-            </td>
-      </tr>
-
-        <tr>
-            <td><input id="button"
-              type="button" value="4"
-              OnClick="calc.display.value+='4'">
-            </td>
-
-            <td><input id="button"
-              type="button" value="5"
-              OnClick="calc.display.value+='5'">
-            </td>
-
-            <td><input id="button"
-              type="button" value="6"
-              OnClick="calc.display.value+='6'">
-            </td>
-
-            <td><input id="button"
-              type="button" value="-"
-              OnClick="clear(this.form)">
-            </td>
-      </tr>
-
-      <tr>
-          <td><input id="button"
-            type="button" value="1"
-            OnClick="calc.display.value+='1'">
-          </td>
-
-          <td><input id="button"
-            type="button" value="2"
-            OnClick="calc.display.value+='2'">
-          </td>
-
-          <td><input id="button"
-            type="button" value="3"
-            OnClick="calc.display.value+='3'">
-          </td>
-
-          <td><input id="button"
-            type="button" value="+"
-            OnClick="clear(this.form)">
-          </td>
-    </tr>
-
-    <tr>
-        <td>
-        </td>
-        <td><input id="button"
-          type="button" value="0"
-          OnClick="calc.display.value+='0'">
-        </td>
-
-        <td><input id="button"
-          type="button" value="="
-          OnClick="calc.display.value+='='">
-        </td>
-
-  </tr>
-
-        </table>
-
-    </form>
+     </div>
+    </div>
   </body>
 </html>
