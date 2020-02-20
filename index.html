@@ -8,8 +8,23 @@
 
   </head>
   <body>
-    <div class = header >
-<marquee>"Test"</marquee>
-  	</div>
+    <form name="calculator">
+        <table id="calculator">
+
+          /*calculator screen*/
+          <tr>
+            <td colspan="6">
+                <input id="button"
+                type="text"
+                name="calc_screen"
+                onkeypress="return event.charcode >= 48
+                && event.charcode <= 57">
+            </td>
+          </tr>
+
+
+        </table>
+
+    </form>
   </body>
 </html>
