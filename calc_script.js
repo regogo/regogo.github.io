@@ -8,5 +8,10 @@
   }
 
   function process(calculator) {
-      calculator.display.value = eval(calculator.display.value);
+    try {
+        calculator.display.value = eval(calculator.display.value);
+    } catch (e) {
+        alert("Invalid operation");
+        calculator.display.value = "";
+    }
   }
