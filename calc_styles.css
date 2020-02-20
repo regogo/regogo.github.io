@@ -4,7 +4,7 @@
   margin: 0;
   background-image: linear-gradient(to right, rgb(41, 128, 185), rgb(109, 213, 250), rgb(255, 255, 255));
   box-sizing: border-box;
-  font-size: 19px;
+  font-size: 30px;
   font-family: 'Open Sans', sans-serif;
 }
 /* container values*/
@@ -27,9 +27,11 @@ form {
 
 /* display values*/
 input {
-    height: 40px;
+    height: 60px;
     width: 100%;
     padding: 10px;
+    margin-bottom: 10px;
+    font-size: 2rem;
     background: #c5e3f6;
 }
 /* button default row values*/
@@ -40,12 +42,12 @@ input {
 /* button values*/
 button {
   padding: 20px;
-  font-size:1rem;
+  font-size:2rem;
   background: #46c3db
 }
 
 /* button row1 values*/
 .row1 {
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
+  grid-template-columns: repeat(2, 1fr);
 }
