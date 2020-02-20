@@ -13,10 +13,12 @@
     <div class="container">
      <div class="card">
        <form name="calculator">
+        <!-- display-->
          <input type="text" name="display" value="" placeholder=""
             onkeypress="return event.charCode >= 48
   			    && event.charCode <= 57">
 
+        <!-- Buttons-->
          <div class="row">
            <button type="button" name="button" OnClick="back(this.form)">C</button>
            <button type="button" name="button" OnClick="calculator.display.value=''">CE</button>
